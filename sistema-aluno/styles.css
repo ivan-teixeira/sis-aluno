@@ -1,0 +1,117 @@
+body{
+    height: 795px;
+    width: 1660px;
+    background-color: yellow;
+    display: grid;
+    grid-template-areas: 
+    "cabeçalho"
+    "conteudo"
+    "rodape";
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 45% 20%;
+    margin: 0px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    grid-area: cabeçalho;
+    background-color: rgb(76, 171, 76);
+}
+header img{
+    height: 200px;
+    width: 200px;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+}
+a {
+    color: palegoldenrod;
+    text-decoration: none;
+    
+}
+a:hover{
+    color: gold;
+    text-decoration: none;
+    background-color: gray;
+}
+
+.main{
+    grid-area: conteudo;
+    display: flex;
+    justify-content: space-between;
+}
+article aside{
+flex: 1;
+    background-color: rgb(29, 220, 29);
+    width: 20%;
+}
+article section{
+flex: 4;
+    background-color: greenyellow;
+}
+footer{
+    grid-area: rodape;
+    background-color: green;
+}
+table, th, td{
+    border: solid black 3px;
+    border-collapse: collapse;
+}
+table{
+    width: 80%;
+    margin: 10px 200px;
+    margin-top: 70px;
+}
+td{
+    padding: 5px 100px;
+}
+
+article section h1{
+    margin-left:50%;
+}
+.gr1{
+    display: grid;
+    grid-template-areas: "di1"
+                         "di2";
+    grid-template-columns:100%;
+    grid-template-rows: 50% 50%;                     
+}
+.personal-data{
+    background-color: red;
+    height: 100px;
+    width: 88%;
+    margin: 10px 100px;
+    text-align: center;
+    grid-area: di1;
+}
+.professional-data{
+    background-color: red;
+    height: 100px;
+    width: 88%;
+    margin: 0px 100px;
+    grid-area: di2;
+}
+#endereco{
+    padding: 0px 1px;
+}
+#nome{
+    padding: 0px 1px;
+}
+
+#cidade{
+    
+}
+#estado{
+
+}
+
+#senha{
+
+}
+#senha{
+
+}
