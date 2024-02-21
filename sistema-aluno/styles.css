@@ -8,7 +8,7 @@ body{
     "conteudo"
     "rodape";
     grid-template-columns: 100%;
-    grid-template-rows: 35% 45% 20%;
+    grid-template-rows: 25% 65% 10%;
     margin: 0px;
 }
 header{
@@ -74,44 +74,98 @@ article section h1{
     margin-left:50%;
 }
 .gr1{
+    height: 200px;
     display: grid;
-    grid-template-areas: "di1"
+    grid-template-areas: "h1"
+                         "di1"
+                         "h2"
                          "di2";
     grid-template-columns:100%;
-    grid-template-rows: 50% 50%;                     
+    grid-template-rows:1fr 10fr 1fr 10fr;                     
+}
+#h1{
+    grid-area: h1;
+}
+.h1{
+    grid-area: h2;
 }
 .personal-data{
     background-color: red;
-    height: 100px;
+    height: 120px;
     width: 88%;
     margin: 10px 100px;
     text-align: center;
     grid-area: di1;
+    padding-top: 30px;
+    border: rgb(121, 201, 0) solid;
+    border-radius: 20px;
 }
 .professional-data{
     background-color: red;
-    height: 100px;
+    height: 120px;
     width: 88%;
     margin: 0px 100px;
     grid-area: di2;
+    padding-top: 30px;
+    border: rgb(121, 201, 0) solid;
+    border-radius: 20px;
 }
-#endereco{
-    padding: 0px 1px;
+.dd1{
+    width: 1465px;
+}
+.dd2{
+    width: 1465px;
+    padding-top: 10px;
+}
+.dd3{
+    width: 1465px;
+    padding-top: 10px;
 }
 #nome{
-    padding: 0px 1px;
+    width: 500px;
 }
-
+#endereco{
+    width: 500px;
+    margin-left: 51px;
+}
 #cidade{
-    
+    margin-right: 257px;
+    margin-left:60px ;
+
 }
 #estado{
-
+    width: 100px;
 }
 
-#senha{
+.pica{
+    width: 700px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-areas: "tra"
+                         "for"
+                         "esp"
+                         "cex";
+                         
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 100%;                     
+}
+#formação{
+    grid-area: for;
+    width: 200px;
 
 }
-#senha{
+#trabalho{
+    grid-area: tra;
+    width: 100px;
+
+}
+#especialização{
+    grid-area: esp;
+    width: 100px;
+
+}
+#curso-extra{
+    grid-area: cex;
+    width: 100px;
 
 }

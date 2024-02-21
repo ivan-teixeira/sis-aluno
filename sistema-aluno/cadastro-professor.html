@@ -24,7 +24,9 @@
     <article class="main">
         <section>
             <div class="gr1">
-                <h1>Dados Pessoais</h1>
+                <div>
+                    <h1 id="h1">Dados Pessoais</h1>
+                </div>
                 <div class="personal-data">
                     <div class="dd1">
                         <label for="name"> Nome do dicente</label>
@@ -35,25 +37,53 @@
                         <input type="text" name="endereco" id="endereco"placeholder="digite o endereço">
                     </div>
                     <div class="dd3">
-                        <label for="name"> cidade</label>
-                        <input type="text" name="cidade" id="idade " placeholder="digite a cidade">
+                        <label for="cidade">Cidade</label>
+                    <select id="cidade" name="cidade">
+                        <option value="audi">Guanambi</option>
+                        <option value="fiat">Iuiu</option>
+                        <option value="volvo">Candiba</option>
+                        <option value="saab">Cana-Brava</option>
+                        <option value="audi">Salvador</option>
+                        <option value="audi">Conquista</option>
+                    </select>
 
                         <label for="name">estado</label>
-                        <input type="text" name="estado" id="senha" placeholder="digite o estado">
+                        <input type="text" name="estado" id="estado" placeholder="digite o estado">
                     </div>    
                 </div>
-
-                <h1 class="h1">Dados Profissionais</h1>
+                <div>
+                    <h1 class="h1">Dados Profissionais</h1>
+                </div>
                 <div class="professional-data">
-                    <label for="name">local trabalho</label>
-                    <input type="text" name="estado" id="senha" placeholder="digite o local de trabalho">
-                 </div>
+                    <div class="pica">
+                        <label for="trabalho">Local de Trabalho</label>
+                        <select id="trabalho" name="trabalho">
+                            <option value="Guanambi">Guanambi</option>
+                            <option value="Iuiu">Iuiu</option>
+                            <option value="Candiba">Candiba</option>
+                            <option value="Cana-Brava">Cana-Brava</option>
+                            <option value="Salvador">Salvador</option>
+                            <option value="Conquista">Conquista</option>
+                        </select>
+                        <div class="b1">
+                            <label for="formação"> Formação</label>
+                            <input type="text" name="formação" id="formação" placeholder="digite o nome">
+                        </div>
+                        <div class="b2">
+                            <label for="especialização"> Especialização</label>
+                            <input type="text" name="especialização" id="especialização" placeholder="digite o nome">
+                        </div>
+                        <div class="b3">
+                            <label for="curso-extra"> Curso extra</label>
+                            <input type="text" name="curso-extra" id="curso-extra" placeholder="digite o nome">
+                        </div>
+                    </div>
+                    
+                </div>
             </div>     
-        <input type="submit" value="salvar">
-
         </section>
     </article>
     <footer><p>rodape</p></footer>
-
+    
 </body>
 </html>
